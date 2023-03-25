@@ -1,0 +1,36 @@
+
+Scanner h = new Scanner(System.in);
+System.out.println("Olá , por favor escreva seu nome:");		
+String nome = h.nextLine();
+System.out.println("Senhor(a) " + nome +" , seja bem vindo a nossa empresa.");
+
+System.out.println("Queremos agradecer pela sua preferência , nos informe seu CPF para identificação");
+double cpf =h.nextDouble();
+System.out.println("");
+System.out.println("Olá Senhor " + nome +" portador do CPF " + cpf +" informe quantos anos você tem:");
+System.out.println("");
+System.out.println("Com essa informação iremos indicar o filme com a classificação indicada.");
+
+int idade=h.nextInt();
+
+if ( idade <= 10 ) {System.out.println("Filmes infatis");
+}else if ( idade <=14) { System.out.println("Filmes Teens");
+}else if (idade <=17) {System.out.println("Filmes Jovens ");
+}else if ( idade >=18 ) {System.out.println("Filmes Adultos");
+}
+
+System.out.println("");
+System.out.println("De acordo com a idade selecionada teremos 3 opções ");
+System.out.println("");
+System.out.println("Escolha sua opção");
+if ( idade <= 10 ) {System.out.println("Filme 1 , Filme 2 , Filme 3.");
+}else if ( idade <=14) { System.out.println("Filme 4 , Filme 5 , Filme 6.");
+}else if (idade <=17) {System.out.println("Filme 7 , Filme 8 , Filme 9. ");
+}else if ( idade >=18 ) {System.out.println("Filme 10 , Filme 11 , Filme 12.");
+}
+
+System.out.println("Informe quantos dias você quer alugar o filme:");
+double data=h.nextDouble();
+double valor= data*1.75;
+System.out.println("O valor ficará : " + valor);
+System.out.println("Obrigado pela preferência ");
